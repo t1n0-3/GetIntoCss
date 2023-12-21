@@ -7,8 +7,7 @@ body {
 .content {
     margin-top: 25px;
     border-radius: 40px;
-    background-color: rgb(0, 0, 0);
-    height: 890px;
+    background-color: rgb(255, 255, 255);
 }
 
 nav {
@@ -36,10 +35,10 @@ nav {
 .product-type-navbar {
     background-color: rgb(255, 255, 255);
     color: rgb(20, 15, 15);
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: space-around;
-    padding-top: 40px;
+    padding-top: 60px;
     margin-left: 30%;
     margin-right: 30%;
 }
@@ -73,11 +72,6 @@ nav {
     box-shadow: 0px 5px 5px black;
 }
 
-
-
-
-
-
 .music:hover,
 .TV:hover,
 .phone:hover {
@@ -88,6 +82,7 @@ nav {
     margin-top: 0px;
     text-align: center;
 }
+
 .title-tv-icon {
     margin-top: -4px;
     text-align: center;
@@ -122,9 +117,40 @@ footer {
     background: #ededed;
 }
 
-video {
-    margin-top: 20px;
-    border-radius: 30px;
-    margin-left: 50%;
-    transform: translateX(-50%);
+@keyframes fadein {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+
+    }
+}
+
+.laptop-1 img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 30px 0px 0px;
+}
+
+.laptop-1-text {
+    height: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    position: absolute;
+    animation: fadein 3s ;
+}
+
+.laptop-1-text h2 a {
+    color: white;
+}
+
+
+.laptop-2 img {
+    width: 100%;
+    border-radius: 0px 0px 30px 30px;
+    margin-top: -3.6px;
 }
